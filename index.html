@@ -8,14 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: "Neon Matrix" - A dark, tech-focused theme with glowing blue/cyan accents. -->
-    <!-- Application Structure Plan: A single-page, vertical scrolling narrative. The structure is designed to tell a story: 1. Introduction (Hero), 2. Experience & Skills (Core Competencies), 3. Projects (Proof of Work), 4. Education (Foundation), 5. Contact (Call to Action). This linear flow is intuitive for recruiters and provides a comprehensive overview. Interactive project cards and subtle scroll animations are used to maintain engagement without overwhelming the user. -->
-    <!-- Visualization & Content Choices: 
-        - Report Info: Skills -> Goal: Inform/Impress -> Viz/Presentation: Styled "pills" or tags in distinct categories (Languages, Soft Skills, Interests). -> Interaction: Static but visually organized. -> Justification: Tags are a modern, scannable way to present skills, superior to a simple bulleted list.
-        - Report Info: Projects -> Goal: Showcase -> Viz/Presentation: Interactive cards with a glassmorphic, glowing edge effect. -> Interaction: On hover, the card lifts and a description appears, encouraging exploration. -> Justification: This makes the most important part of the portfolio (the work) engaging and visually appealing.
-        - Report Info: Education/Courses -> Goal: Organize/Inform -> Viz/Presentation: A clean, vertical timeline. -> Interaction: Static. -> Justification: A timeline is the most logical and professional way to present chronological data like education.
-    -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Source Sans Pro', sans-serif;
@@ -66,7 +58,6 @@
 </head>
 <body class="w-full">
 
-    <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-xl font-bold font-mono text-white">Panith CH</div>
@@ -80,14 +71,13 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="hero" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
             <canvas id="hero-canvas"></canvas>
             <div class="relative z-10 px-4">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">Panith CH</h1>
                 <p class="font-mono text-lg md:text-2xl mt-4 text-cyan-400" id="typing-text"></p>
                 <div class="mt-8 flex justify-center space-x-6">
-                    <a href="mailto:1rn20ai036.panith.ch@gmail.com" class="text-gray-300 hover:text-cyan-400 transition-colors text-2xl">
+                    <a href="mailto:panithchitturi033@gmail.com" class="text-gray-300 hover:text-cyan-400 transition-colors text-2xl">
                         ✉️
                     </a>
                     <a href="https://www.linkedin.com/in/panith-ch-94b945288" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-cyan-400 transition-colors text-2xl">
@@ -97,7 +87,6 @@
             </div>
         </section>
 
-        <!-- Experience & Skills -->
         <section id="experience" class="py-20 md:py-32 container mx-auto px-6">
             <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-16 scroll-reveal">Experience & Skills</h2>
             <div class="grid md:grid-cols-5 gap-12">
@@ -137,12 +126,10 @@
             </div>
         </section>
 
-        <!-- Projects -->
         <section id="projects" class="py-20 md:py-32 bg-[#080a0e]">
             <div class="container mx-auto px-6">
                 <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-16 scroll-reveal">Projects</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project 1: Tweete -->
                     <div class="glass-card p-6 scroll-reveal">
                         <h3 class="text-xl font-bold text-white mb-2">Tweete - AI Twitter Sentimental Analysis</h3>
                         <p class="text-sm text-gray-400 mb-4">Developed an ML model to classify sentiment in tweets using NLP techniques and algorithms like Naive Bayes, SVM, or Deep Learning.</p>
@@ -153,7 +140,6 @@
                             <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">Machine Learning</span>
                         </div>
                     </div>
-                    <!-- Project 2: Carz -->
                     <div class="glass-card p-6 scroll-reveal">
                         <h3 class="text-xl font-bold text-white mb-2">Carz - Car Rental Management System</h3>
                         <p class="text-sm text-gray-400 mb-4">An online system to automate key processes, improve customer experience, and enhance operational efficiency for car rental businesses.</p>
@@ -165,7 +151,6 @@
                            <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">XAMPP</span>
                         </div>
                     </div>
-                    <!-- Project 3: Morsee -->
                     <div class="glass-card p-6 scroll-reveal">
                         <h3 class="text-xl font-bold text-white mb-2">Morsee - Morse Code Generator</h3>
                         <p class="text-sm text-gray-400 mb-4">A user-friendly Android application that converts text input into Morse code signals, demonstrating mobile application development skills.</p>
@@ -174,24 +159,31 @@
                             <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">Android Studio</span>
                         </div>
                     </div>
+                    <div class="glass-card p-6 scroll-reveal">
+                        <h3 class="text-xl font-bold text-white mb-2">AI-Powered Automated Onboarding</h3>
+                        <p class="text-sm text-gray-400 mb-4">Architected a fully automated, end-to-end user onboarding workflow using n8n. This system uses a Google Gemini model to dynamically personalize email content, enhancing new user engagement.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">n8n</span>
+                            <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">Google Gemini</span>
+                            <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">Automation</span>
+                            <span class="skill-pill font-mono text-xs px-2 py-1 rounded-full">API Integration</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education -->
         <section id="education" class="py-20 md:py-32 container mx-auto px-6">
             <h2 class="section-title text-3xl md:text-4xl font-bold text-center text-white mb-16 scroll-reveal">Education & Certifications</h2>
             <div class="max-w-3xl mx-auto">
                 <div class="relative border-l-2 border-cyan-800/50 space-y-12">
-                    <!-- Education Item 1 -->
                     <div class="pl-8 relative scroll-reveal">
                         <div class="absolute -left-[11px] top-1 w-5 h-5 bg-cyan-400 rounded-full border-4 border-gray-800"></div>
                         <p class="font-mono text-sm text-cyan-400">2020 - 2024</p>
                         <h3 class="font-bold text-lg text-white mt-1">BE, Artificial Intelligence and Machine Learning</h3>
                         <p class="text-gray-400">RNS Institute of Technology, Bangalore</p>
                     </div>
-                     <!-- Education Item 2 -->
-                    <div class="pl-8 relative scroll-reveal">
+                     <div class="pl-8 relative scroll-reveal">
                         <div class="absolute -left-[11px] top-1 w-5 h-5 bg-cyan-400 rounded-full border-4 border-gray-800"></div>
                         <p class="font-mono text-sm text-cyan-400">Courses</p>
                         <h3 class="font-bold text-lg text-white mt-1">Professional Development</h3>
@@ -201,12 +193,11 @@
             </div>
         </section>
 
-        <!-- Contact -->
         <footer id="contact" class="py-20 text-center bg-[#080a0e]">
             <div class="container mx-auto px-6 scroll-reveal">
                 <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
                 <p class="text-gray-400 mt-4 max-w-xl mx-auto">I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to connect, feel free to reach out.</p>
-                <a href="mailto:1rn20ai036.panith.ch@gmail.com" class="inline-block mt-8 font-mono text-lg bg-transparent border border-cyan-400 text-cyan-400 px-8 py-3 rounded-md hover:bg-cyan-400/10 transition-colors">
+                <a href="mailto:panithchitturi033@gmail.com" class="inline-block mt-8 font-mono text-lg bg-transparent border border-cyan-400 text-cyan-400 px-8 py-3 rounded-md hover:bg-cyan-400/10 transition-colors">
                     Say Hello
                 </a>
                  <div class="mt-10 text-sm text-gray-500">
